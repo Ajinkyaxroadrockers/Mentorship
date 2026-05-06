@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Home | MentorConnect{% endblock %}
+
+{% block content %}
+<header class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Student Mentorship Portal</p>
+
+    <h1>Find the right senior mentor for your college journey</h1>
+
+    <p>
+      MentorConnect helps students connect with experienced seniors for studies,
+      sports, cultural activities, projects, and placement guidance.
+    </p>
+
+    <a class="primary-btn" href="{{ url_for('student_form') }}">
+      Explore Mentorship Categories
+    </a>
+  </div>
+
+  <div class="hero-card">
+    <h2>Why use MentorConnect?</h2>
+
+    <ul>
+      <li>Find mentors by branch and category</li>
+      <li>View contact details in one place</li>
+      <li>Connect with seniors easily</li>
+    </ul>
+  </div>
+</header>
+{% endblock %}
