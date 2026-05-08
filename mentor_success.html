@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Mentor Added | MentorConnect{% endblock %}
+
+{% block content %}
+<main class="page-section narrow-page">
+  <div class="success-card">
+    <p class="eyebrow">Registration Complete</p>
+    <h1>Thank you, {{ mentor_name }}</h1>
+
+    <p>
+      Your mentor profile has been added under {{ branch_name }} and {{ category }}.
+      Students can now find you from the mentee flow.
+    </p>
+
+    <a class="primary-btn" href="{{ url_for('mentors', name='Student', branch=branch, category=category) }}">
+      View Your Mentor Card
+    </a>
+  </div>
+</main>
+{% endblock %}

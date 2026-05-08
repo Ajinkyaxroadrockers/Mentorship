@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Choose Role | MentorConnect{% endblock %}
+
+{% block content %}
+<main class="page-section">
+  <div class="section-heading">
+    <p class="eyebrow">Choose Your Role</p>
+    <h1>How do you want to use MentorConnect?</h1>
+    <p>Select mentee if you want guidance. Select mentor if you are a senior and want to help students.</p>
+  </div>
+
+  <section class="choice-grid">
+    <a class="choice-card" href="{{ url_for('student_form') }}">
+      <span>ME</span>
+      <h2>I want to become a mentee</h2>
+      <p>Find seniors by branch and category, then view their contact details.</p>
+    </a>
+
+    <a class="choice-card" href="{{ url_for('mentor_register') }}">
+      <span>MR</span>
+      <h2>I want to become a mentor</h2>
+      <p>Register your expertise so students can find you in the correct branch and category.</p>
+    </a>
+  </section>
+</main>
+{% endblock %}
